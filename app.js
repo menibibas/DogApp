@@ -5,9 +5,7 @@ app.config(function($routeProvider) {
     $routeProvider.
       when("/", {
         templateUrl: "home.html",
-      }).when("/", {
-        templateUrl: "index.html",
-        controller: "indexCtrl"
+        controller: "homeCtrl"
       }).when("/breeds", {
          templateUrl: "breeds.html",
          controller: "breedsCtrl"

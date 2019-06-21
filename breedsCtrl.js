@@ -1,4 +1,4 @@
-app.controller("breedsCtrl", function ($scope, $http, $routeParams) {
+app.controller("breedsCtrl", function ($scope, $http, $routeParams, $location ) {
     
     function Breed(name, image) {
         this.name = name;

@@ -1,0 +1,19 @@
+<div class="my-3">
+    <label for="search">Search</label>
+    <input type="text" placeholder="Enter breed">
+    <button class="update">Update Images</button>
+</div>
+<div class="row">
+    <div class="col-md-4 col-sm-6" ng-repeat="breed in breeds">
+        <div class="card my-3" style="width: 18rem;">
+            <a href="#">
+                <img ng-src="{{breed.image}}" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Dog Breed</h5>
+                <p>{{breed.name}}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
