@@ -3,10 +3,17 @@
     <input type="text" placeholder="Enter breed">
     <button class="update">Update Images</button>
 </div>
+<div>
+Sort By: <select ng-model="orderProp">
+        <option value=""></option>
+        <option value="name">Name</option>
+        <option value="image">Image</option>
+    </select>
+</div>
 <div class="row">
-    <div class="col-md-4 col-sm-6" ng-repeat="breed in breeds">
+    <div class="col-md-4 col-sm-6" ng-repeat="breed in breeds | orderBy : orderProp" >
         <div class="card my-3" style="width: 18rem;">
-            <a href="#">
+            <a href="#" ng-click="enterBreed()">
                 <img ng-src="{{breed.image}}" class="card-img-top" alt="...">
             </a>
             <div class="card-body">

@@ -18,4 +18,12 @@ app.controller("breedsCtrl", function ($scope, $http, $routeParams, $location ) 
         console.error(err);
 
     })
+
+    $scope.openBreedDetails = function(breed) {
+    
+        var index = $scope.breeds.indexOf(breed);
+        $location.path("/breeds/" + index);
+        
+      }
+      
 });

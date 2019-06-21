@@ -5,3 +5,8 @@ img {
 input {
     margin-right: 750px;
 }
+
+label {
+    font-weight: bolder;
+}
+
